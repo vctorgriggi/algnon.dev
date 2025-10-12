@@ -1,0 +1,32 @@
+---
+import Link from '@/components/Link.astro'
+import PageHead from '@/components/PageHead.astro'
+import Layout from '@/layouts/Layout.astro'
+---
+
+<Layout class="max-w-3xl">
+  <PageHead slot="head" title="Home" />
+  <section class="rounded-lg border">
+    <div class="flex flex-col space-y-1.5 p-6">
+      <h3 class="text-3xl leading-none font-medium">al·gno·n</h3>
+      <p class="text-muted-foreground text-sm">/ˈælɡ.nɒn/</p>
+    </div>
+    <div class="p-6 pt-0">
+      <p class="text-muted-foreground text-sm">
+        a reference to <Link
+          href="https://en.wikipedia.org/wiki/Flowers_for_Algernon"
+          external
+          class="text-foreground decoration-muted-foreground hover:decoration-foreground font-medium break-words underline underline-offset-[3px] transition-colors"
+          >Flowers for Algernon</Link
+        > and the song by <Link
+          href="https://yorushika.com/?lang=en"
+          external
+          class="text-foreground decoration-muted-foreground hover:decoration-foreground font-medium break-words underline underline-offset-[3px] transition-colors"
+          >ヨルシカ (Yorushika)</Link
+        >. it stands for learning and quiet change — a reminder that even in
+        what we build, there’s room for feeling. in the end, it’s about shaping
+        what surrounds us, not just making things work.
+      </p>
+    </div>
+  </section>
+</Layout>
